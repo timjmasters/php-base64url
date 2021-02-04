@@ -11,9 +11,13 @@
     "authors": [
         {
             "name": "Timothy Masters",
-            "email": "timothy.john.masters@gmail.com"
+            "email": "timothy.john.masters@gmail.com",
+            "homepage": "https://timjmasters.com"
         }
     ],
+    "require": {
+        "php": "^7.1"
+    },
     "require-dev": {
         "phpunit/phpunit": "^8.5"
     }
