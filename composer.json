@@ -1,0 +1,20 @@
+{
+    "name": "timjmasters/php-base64url",
+    "description": "A base64url encoder for encoding data as specified in rfc4648 section 5 https://www.rfc-editor.org/rfc/rfc4648#section-5",
+    "type": "library",
+    "license": "GPL-3.0-or-later",
+    "autoload": {
+        "psr-4": {
+            "TimJMasters\\Base64URL\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Timothy Masters",
+            "email": "timothy.john.masters@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^8.5"
+    }
+}
