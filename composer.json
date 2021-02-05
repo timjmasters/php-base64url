@@ -3,6 +3,7 @@
     "description": "A base64url encoder for encoding data as specified in rfc4648 section 5 https://www.rfc-editor.org/rfc/rfc4648#section-5",
     "type": "library",
     "license": "GPL-3.0-or-later",
+    "version": "1.0.0",
     "autoload": {
         "psr-4": {
             "TimJMasters\\Base64URL\\": "src/"
