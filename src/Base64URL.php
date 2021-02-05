@@ -22,7 +22,7 @@ namespace TimJMasters\Base64URL;
 class Base64URL {
 
     /**
-     * Encode a string using a modified Base64 encoding as specified in 
+     * Encode a string using a modified Base64 encoding as specified in <a href="https://tools.ietf.org/html/rfc4648#section-5">rfc4648 section 5</a>
      * @param string $string 
      * @return string Returns encoded base64 string without trailing = characters and replacements for unsafe characters: <ul><li>+ replaced with -</li><li>/ replaced with _</li></ul
      * @see base64_encode
