@@ -27,7 +27,11 @@ class Base64URL {
      * @return string Returns encoded base64 string without trailing = characters and replacements for unsafe characters: <ul><li>+ replaced with -</li><li>/ replaced with _</li></ul
      * @see base64_encode
      */
-    public static function encode(string $string): string {
+    public static function encode(string $string = null): string {
+        if (!$string) {
+            return "";
+        }
+
         // Normal base64 encode
         $base64 = base64_encode($string);
 
