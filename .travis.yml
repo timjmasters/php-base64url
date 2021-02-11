@@ -4,14 +4,17 @@ php:
     - '8.0'
 cache:
  directories:
-   - $HOME/.composer/cache/files
+   - $HOME/.composer/cache
+notifications:
+    on_success: never
+    on_failure: always
 before_script:
     - composer self-update
     - composer install --prefer-source --no-interaction
     - composer dump-autoload
 script:
-    composer run-script test
-notifications:
-    on_success: never
-    on_failure: always
+  - mkdir -p build/logs
+  - composer run-script test --coverage-clover build/logs/clover.xml
+after_script:
+  - php vendor/bin/php-coveralls -v
     
